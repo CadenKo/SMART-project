@@ -1,0 +1,100 @@
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Epilogue', 'sans-serif'; 
+  padding: 0rem;
+  background-color: grey;
+  color: white;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-size: 0.7em;
+  
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: gold;
+}
+
+header .search {
+  position: fixed;
+  right: 2em;
+  top: 0em;
+  margin-top: 0.8em;
+  float: right;
+  background-color: white;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+#searchInput {
+  font-family: 'Epilogue', 'sans-serif';
+  font-size: 16px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  display: none;
+}
+
+#searchButton {
+  background: gold;
+  color: white;
+  font-size: 16px;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+body {
+  margin-top: 5em;
+  font-family: 'Epilogue', 'sans-serif'; 
+}
+
+#table {
+  overflow: scroll;
+  box-shadow: 2px 2px #cccccc;
+}
+@media (min-width: 598px) {
+  header {
+      background-color: grey;
+      background-size: 100%;
+      font-size: 0.7em;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+      background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/archives_helix.jpg);
+      background-size: 100%;
+      font-size: 0.7em;
+  }
+  #searchButton {
+      background: gold;
+      color: white;
+      font-size: 16px;
+      padding: 0.5em;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0
+  }
+  #searchInput {
+      display: inline-block;
+  }
+}
